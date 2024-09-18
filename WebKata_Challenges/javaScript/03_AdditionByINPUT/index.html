@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <label>Input 1</label>
+    <input id="in1" oninput="calculateSum()" />
+    <br /><br />
+    <label>Input 2</label>
+    <input id="in2" oninput="calculateSum()" />
+    <p>The Sum of input 1 and input 2 is</p>
+    <p id="result"></p>
+
+    <script>
+      // JavaScript Code
+      window.onload = function () {
+        // Get input fields
+        var input1 = document.getElementById("in1");
+        var input2 = document.getElementById("in2");
+
+        // Add event listeners to input fields
+        input1.addEventListener("input", calculateSum);
+        input2.addEventListener("input", calculateSum);
+
+        function calculateSum() {
+          // Get values of input fields
+          var val1 = Number(input1.value);
+          var val2 = Number(input2.value);
+
+          // Calculate sum
+          var sum = val1 + val2;
+
+          // Display result
+          document.getElementById("result").innerHTML = sum;
+        }
+      };
+    </script>
+  </body>
+</html>
