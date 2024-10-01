@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  
+  </head>
+  <body>
+    <label>Input</label>
+    <input id="in1" oninput="checkString()"/>
+    <br>
+    <p>Is 'Java' is present in the above input?</p>
+    <p id="result"></p>
+   
+    <script>
+        function checkString(){
+    //Start Your code here
+    const input = document.getElementById("in1")
+    let result = document.getElementById("result")
+    if(input.value.includes("Java")){
+        result.innerText = "true";
+    }else{
+        result.innerText = "false";
+    }
+}
+    </script>
+  </body>
+</html>

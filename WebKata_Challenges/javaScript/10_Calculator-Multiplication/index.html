@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <label>Input 1</label>
+    <input id="in1" oninput="multiply()" />
+    <br /><br />
+    <label>Input 2</label>
+    <input id="in2" oninput="multiply()" />
+    <p>The product of input 1 and input 2 is</p>
+    <p id="result"></p>
+
+    <script>
+      function multiply() {
+        //Start Your code here
+        const inp1 = document.getElementById("in1").value;
+        const inp2 = document.getElementById("in2").value;
+        let result = document.getElementById("result");
+        const multiply = Number(inp1) * Number(inp2);
+        result.innerText = multiply;
+      }
+    </script>
+  </body>
+</html>

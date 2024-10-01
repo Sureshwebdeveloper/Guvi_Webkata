@@ -15,3 +15,15 @@ Q6. **Display "Hello World!" by using a p tag** which is already present with id
 Q7. **Display "Hello from Guvian!"** in a paragraph tag, using Javascript
 
 Q8. **Display the value of selected option in paragraph tag** with id 'selectedOption' using Javascript. Note: Values are changed dynamically for evaluation
+
+Q9. **Display the value of selected radio button in paragraph tag** with id 'selectedOption' using Javascript. Note: Values are changed dynamically for evaluation.
+
+Q10. **Multiply given two inputs with id 'in1' and 'in2'** and display the values in paragraph tag with id 'result' using Javascript.
+
+Q11. Check whether the given input string with id **'in1' includes 'Java'. if so, display true otherwise false** in the paragraph tag with id 'result'.
+
+Q12. **Join all the given array elements to form a comma seperated string** ["Red","Green","White","Black"].Display the result in the paragraph with id "demo"
+
+Q13. Raju is 13 years old. **Display in the given paragraph with id 'demo' as 'Eligible to vote' if he is eligible otherwise 'Not eligible'**
+
+Q14. Given a number 4.4, **Find the nearest greater number and display it in paragraph with id 'demo'**
